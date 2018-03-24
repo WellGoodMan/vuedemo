@@ -29,8 +29,8 @@ export default {
   },
   methods: {
     getData() {
-      this.$api.get("topics", null, r => {
-        this.list = r.data;
+      this.$api.get("topics", null, a => {
+        this.list = a.data;
       });
     }
   }
